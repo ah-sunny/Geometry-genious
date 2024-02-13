@@ -1,0 +1,1 @@
+const inputBase = document.getElementById('')
