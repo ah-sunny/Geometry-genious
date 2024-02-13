@@ -67,7 +67,7 @@
                             <!-- height -->
                             <input type="text" name="" id="rec-length" placeholder=" l" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
-                        <p class="ad">area : <span id="rec-area"></span> cm<sup>2</sup></p>
+                        <p class="ad">area : <span id="rec-area"> </span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
                     <button onclick="calculateRectangle()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
@@ -82,18 +82,18 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl">Parallelogram</h2>
-                  <p>Area (A) = w x l</p>
+                  <p>Area (A) = b x h</p>
                   <div>
                     <!-- base -->
                         <div class="flex justify-center gap-2 mb-5">
-                            <input type="text" name="" id="rec-width" placeholder=" w" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="para_base" placeholder=" base" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
                             <!-- height -->
-                            <input type="text" name="" id="rec-length" placeholder=" l" class="w-[30%] bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="para_hight" placeholder=" height" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
-                        <p class="ad">area : <span id="rec-area"></span> cm<sup>2</sup></p>
+                        <p>area : <span id="para_area_show"></span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
-                    <button onclick="calculateRectangle()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
+                    <button onclick="calParallelogram()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -105,17 +105,18 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl">Rhombus</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
+                  <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                   <div>
                     <!-- base -->
                         <div class="flex justify-center gap-2 mb-5">
-                            <input type="text" name="" id="inp_base" placeholder=" b" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="rhom_d1" placeholder=" b" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
                             <!-- height -->
-                            <input type="text" name="" id="inp_height" placeholder=" h" class="w-[30%] bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="rhom_d2" placeholder=" h" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
+                        <p>Area : <span id="rhom_area"></span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
-                    <button class="btn btn-primary text-white text-xl w-full">Calculate</button>
+                    <button onclick="calRhombus()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -127,17 +128,18 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl">Pentagon</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
+                  <p>Area (A) = 0.5 x perimeter x  b</p>
                   <div>
                     <!-- base -->
                         <div class="flex justify-center gap-2 mb-5">
-                            <input type="text" name="" id="inp_base" placeholder=" b" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="p_penta" placeholder=" p" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
                             <!-- height -->
-                            <input type="text" name="" id="inp_height" placeholder=" h" class="w-[30%] bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="b_penta" placeholder=" b" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
+                        <p>Area : <span id="area_penta"></span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
-                    <button class="btn btn-primary text-white text-xl w-full">Calculate</button>
+                    <button onclick="calpentagon()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -149,17 +151,18 @@
                 </figure>
                 <div class="card-body items-center text-center">
                   <h2 class="card-title text-2xl">Ellipse</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
+                  <p>Area (A) = π x a x b</p>
                   <div>
                     <!-- base -->
                         <div class="flex justify-center gap-2 mb-5">
-                            <input type="text" name="" id="inp_base" placeholder=" b" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="a_ellipse" placeholder=" a" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
                             <!-- height -->
-                            <input type="text" name="" id="inp_height" placeholder=" h" class="w-[30%] bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="b_ellipse" placeholder=" b" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
+                        <p>Area : <span id="area_ellipse"></span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
-                    <button class="btn btn-primary text-white text-xl w-full">Calculate</button>
+                    <button onclick="calEllipse()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -172,5 +175,6 @@
 
     </main>
     <script src="./calculate.js"></script>
+    <script src="./sortCalculate.js"></script>
 </body>
 </html>
