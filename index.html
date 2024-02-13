@@ -44,7 +44,7 @@
                             <!-- height -->
                             <input type="text" name="" id="tri_inp_height" placeholder=" h" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
-                        <p class="ad">area : <span id="tri-area"></span> cm</p>
+                        <p class="ad">area : <span id="tri-area"></span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
                     <button onclick="calculateTriangle()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
@@ -55,54 +55,56 @@
               <!-- rectangle -->
               <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
+                  <img src="./images/rectangle.png" alt="rectangle" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title text-2xl">Triangle</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
+                  <h2 class="card-title text-2xl">Rectangle</h2>
+                  <p>Area (A) = w x l</p>
                   <div>
                     <!-- base -->
                         <div class="flex justify-center gap-2 mb-5">
-                            <input type="text" name="" id="inp_base" placeholder=" b" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="rec-width" placeholder=" w" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
                             <!-- height -->
-                            <input type="text" name="" id="inp_height" placeholder=" h" class="w-[30%] bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="rec-length" placeholder=" l" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
+                        <p class="ad">area : <span id="rec-area"></span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
-                    <button class="btn btn-primary text-white text-xl w-full">Calculate</button>
+                    <button onclick="calculateRectangle()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
                   </div>
                 </div>
               </div>
               
-              <!-- rectangle -->
+              <!-- parallelogram -->
               <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
+                  <img src="./images/parallelogram.png" alt="rectangle" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title text-2xl">Triangle</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
+                  <h2 class="card-title text-2xl">Parallelogram</h2>
+                  <p>Area (A) = w x l</p>
                   <div>
                     <!-- base -->
                         <div class="flex justify-center gap-2 mb-5">
-                            <input type="text" name="" id="inp_base" placeholder=" b" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="rec-width" placeholder=" w" class="w-[30%] rounded-md bg-gray-200"> <span>cm</span>
                             <!-- height -->
-                            <input type="text" name="" id="inp_height" placeholder=" h" class="w-[30%] bg-gray-200"> <span>cm</span>
+                            <input type="text" name="" id="rec-length" placeholder=" l" class="w-[30%] bg-gray-200"> <span>cm</span>
                         </div>
+                        <p class="ad">area : <span id="rec-area"></span> cm<sup>2</sup></p>
                   </div>
                   <div class="card-actions w-full">
-                    <button class="btn btn-primary text-white text-xl w-full">Calculate</button>
+                    <button onclick="calculateRectangle()" class="btn btn-primary text-white text-xl w-full">Calculate</button>
                   </div>
                 </div>
               </div>
               
-              <!-- rectangle -->
+              <!-- rhombus -->
               <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
+                  <img src="./images/rhombus.png" alt="triangle" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title text-2xl">Triangle</h2>
+                  <h2 class="card-title text-2xl">Rhombus</h2>
                   <p>Area (A) = 0.5 x b x h</p>
                   <div>
                     <!-- base -->
@@ -118,13 +120,13 @@
                 </div>
               </div>
               
-              <!-- rectangle -->
+              <!-- pentagon -->
               <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
+                  <img src="./images/pentagon.png" alt="triangle" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title text-2xl">Triangle</h2>
+                  <h2 class="card-title text-2xl">Pentagon</h2>
                   <p>Area (A) = 0.5 x b x h</p>
                   <div>
                     <!-- base -->
@@ -140,13 +142,13 @@
                 </div>
               </div>
               
-              <!-- rectangle -->
+              <!-- ellipse -->
               <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
+                  <img src="./images/ellipse.png" alt="triangle" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title text-2xl">Triangle</h2>
+                  <h2 class="card-title text-2xl">Ellipse</h2>
                   <p>Area (A) = 0.5 x b x h</p>
                   <div>
                     <!-- base -->
@@ -162,7 +164,6 @@
                 </div>
               </div>
               
-              <!-- rectangle -->
 
             </div>
         </section>

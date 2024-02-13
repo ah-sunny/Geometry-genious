@@ -18,3 +18,7 @@ function calculateTriangle(){
     const Sani = document.getElementById('tri-area');
     Sani.innerText = areacal;
 }
+
+function calculateRectangle(){
+    
+}
